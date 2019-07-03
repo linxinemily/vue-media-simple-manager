@@ -102,4 +102,4 @@ the components require these props and defined methods:
 
 ```
 
-The full example is here
+The full example is [here](https://github.com/linxinemily/vue-media-simple-manager/blob/master/src/index.vue)
