@@ -69,7 +69,7 @@ the components require these props and defined methods:
     <tr>
         <td>medias</td>
         <td>Array</td>
-        <td>the data of your medias</td>
+        <td>the data of your medias (the data format would be mentioned later)</td>
     </tr>
 </table>
 
@@ -108,6 +108,11 @@ Each of your media should match the following format:
         <td>Property</td>
         <td>Type</td>
         <td>Description</td>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>number</td>
+        <td>a unique number generated automatically by database</td>
     </tr>
     <tr>
         <td>title</td>
