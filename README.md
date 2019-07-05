@@ -1,8 +1,21 @@
-# Media Library
+# Vue Media Simple Manager
+
+> simple media mananger build with Vue.js 2.0.
+
+## Intro
+
+you can use these Vue components provided by *Vue Media Simple Manager* to handle images uploading and manage these images, including editting the `alt` and `title` of the images.
+
+
+## Installation
+
+```
+$ npm i vue-media-simple-manager
+```
 
 ## How to use
 
-Register the component:
+Register the components:
 ```
 import { MediaGallery, MediaUploader } from 'vue-media-simple-manager'
 export default {
@@ -12,9 +25,11 @@ export default {
 }
 ```
 
+### Components Usage
+
 the components require these props and defined methods:
 
-### MediaUploader
+#### MediaUploader
 
 * Props
 <table>
@@ -42,7 +57,7 @@ the components require these props and defined methods:
     </tr>
 </table>
 
-### MediaGallery
+#### MediaGallery
 
 * Props
 <table>
@@ -84,10 +99,51 @@ the components require these props and defined methods:
     </tr>
 </table>
 
+### Data Format of Media
+
+Each of your media should match the following format:
+
+```
+
+<table>
+    <tr>
+        <td>Property</td>
+        <td>Type</td>
+        <td>Description</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>String</td>
+        <td>text of your media title(when data uploaded, the default value will be "title") </td>
+    </tr>
+    <tr>
+        <td>url</td>
+        <td>String</td>
+        <td>the absolute URL of your media</td>
+    </tr>
+    <tr>
+        <td>alt</td>
+        <td>String</td>
+        <td>alt of your media title(when data uploaded, the default value will be "alt") </td>
+    </tr>
+</table>
+```
+
+So, each of media Object would be like this:
+```
+{
+    id: 1,
+    title: "my stunning image"
+    url: "https://example.com/api/image_01.jpg",
+    alt: "image_01"
+}
+
+```
+
 
 ## Example of Usage
 
-```
+``` html
 <template>
   <div>
     <media-uploader @uploadMedia="createMedia" :apiUrl="apiUrl"/>
@@ -102,4 +158,4 @@ the components require these props and defined methods:
 
 ```
 
-The full example is [here](https://github.com/linxinemily/vue-media-simple-manager/blob/master/src/index.vue)
+Full example is [here](https://github.com/linxinemily/vue-media-simple-manager/blob/master/src/index.vue)
