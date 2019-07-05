@@ -1,10 +1,10 @@
-# Vue Media Simple Manager
+# Vue Media Simple Manager 
 
-> simple media mananger build with Vue.js 2.0.
+> simple media mananger build with Vue.js 2.0. 
 
 ## Intro
 
-you can use these Vue components provided by *Vue Media Simple Manager* to handle images uploading and manage these images, including editting the `alt` and `title` of the images.
+you can use these Vue components provided by *Vue Media Simple Manager* to handle images uploading and manage uploaded images, including editing the `alt` and `title` of the images.
 
 
 ## Installation
@@ -16,7 +16,7 @@ $ npm i vue-media-simple-manager
 ## How to use
 
 Register the components:
-```
+``` javascript
 import { MediaGallery, MediaUploader } from 'vue-media-simple-manager'
 export default {
     components: {
@@ -103,8 +103,6 @@ the components require these props and defined methods:
 
 Each of your media should match the following format:
 
-```
-
 <table>
     <tr>
         <td>Property</td>
@@ -127,10 +125,10 @@ Each of your media should match the following format:
         <td>alt of your media title(when data uploaded, the default value will be "alt") </td>
     </tr>
 </table>
-```
 
 So, each of media Object would be like this:
-```
+
+``` javascript
 {
     id: 1,
     title: "my stunning image"
@@ -158,4 +156,4 @@ So, each of media Object would be like this:
 
 ```
 
-Full example is [here](https://github.com/linxinemily/vue-media-simple-manager/blob/master/src/index.vue)
+Full example is [here](https://github.com/linxinemily/vue-media-simple-manager/blob/master/src/index.vue).
