@@ -6,6 +6,9 @@
 
 you can use these Vue components provided by *Vue Media Simple Manager* to handle images uploading and manage uploaded images, including editing the `alt` and `title` of the images.
 
+## Demo
+
+![demo](https://i.imgur.com/YdSxNGo.gif)
 
 ## Installation
 
@@ -92,9 +95,9 @@ the components require these props and defined methods:
         </td>
     </tr>
     <tr>
-        <td>deleteMutiMedias(data)</td>
+        <td>updateMedia(data)</td>
         <td>
-            to handle updating the information of your medias 
+            to handle updating the information of single media
         </td>
     </tr>
 </table>
