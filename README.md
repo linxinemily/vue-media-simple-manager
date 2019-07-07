@@ -8,7 +8,7 @@ you can use these Vue components provided by *Vue Media Simple Manager* to handl
 
 ## Demo
 
-![demo](https://i.imgur.com/YdSxNGo.gif)
+![demo](https://imgur.com/55Lc09i.gif)
 
 ## Installation
 
